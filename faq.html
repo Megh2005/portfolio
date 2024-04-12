@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>FAQ|Megh</title>
+</head>
+
+<body>
+    <h2>Frequently Asked Questions</h2>
+    <button class="accordion">What is Kotlin Multi Platform ?</button>
+    <div class="panel">
+        <p>
+            Kotlin Multiplatform is a versatile development framework allowing developers to write code that runs
+            seamlessly across multiple platforms, including Android, iOS, web, and desktop. Leveraging Kotlin's concise
+            syntax and interoperability with Java, developers can share business logic, data models, and other
+            non-platform-specific code across different environments, reducing redundancy and speeding up development
+            cycles. This approach promotes code reuse and maintainability, streamlining the creation of cross-platform
+            applications. With Kotlin Multiplatform, developers can efficiently target various platforms while
+            maintaining a single codebase, enabling faster iteration and greater flexibility in software development.
+        </p>
+    </div>
+    <button class="accordion">What is the difference between Cross & Native Platform ?</button>
+    <div class="panel">
+        <p>
+            Cross-platform development refers to the creation of software applications that can run seamlessly on
+            multiple operating systems, such as iOS, Android, and Windows, using a single codebase. This approach offers
+            advantages in terms of cost-effectiveness and time efficiency, as developers can write code once and deploy
+            it across various platforms. On the other hand, native platform development involves building applications
+            specifically tailored to a particular operating system using its native programming languages and tools.
+            While native apps often deliver superior performance and user experience due to their optimized integration
+            with the platform, they require separate development efforts for each targeted platform, which can be
+            resource-intensive.
+        </p>
+    </div>
+    <button class="accordion">What is Search Engine Optimisation (SEO) ?</button>
+    <div class="panel">
+        <p>
+            Search Engine Optimization (SEO) is the meticulous process of enhancing a website's visibility in search
+            engine results pages (SERPs) through organic means. This involves optimizing various on-page factors such as
+            meta tags, headings, and keyword density, as well as off-page elements like backlinks and social signals.
+            Technical SEO aspects such as site structure, XML sitemaps, and schema markup play a crucial role in
+            improving crawlability and indexation by search engine bots. Additionally, strategic keyword research,
+            competitor analysis, and continuous performance tracking through analytics tools are imperative for
+            effective SEO campaigns. Ultimately, mastering SEO requires a blend of technical expertise, analytical
+            insight, and consistent optimization efforts to achieve higher rankings and organic traffic.
+        </p>
+    </div>
+    <button class="accordion">What is MERN Stack Development ?</button>
+    <div class="panel">
+        <p>
+            MERN Stack development leverages MongoDB, Express.js, React.js, and Node.js to create robust, scalable web
+            applications. MongoDB, a NoSQL database, offers flexibility in data storage, while Express.js facilitates
+            building server-side applications with ease. React.js, a powerful JavaScript library, enables the creation
+            of dynamic user interfaces, ensuring a seamless user experience. Node.js serves as the runtime environment,
+            allowing server-side execution of JavaScript code. Together, these technologies form a cohesive stack,
+            empowering developers to craft feature-rich applications with efficient data handling, real-time updates,
+            and smooth client-server communication, thus driving innovation in modern web development.
+        </p>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+        document.addEventListener("contextmenu", function (t) {
+            t.preventDefault()
+        }, false);
+        const ans = confirm("This Page Is Only Available For PC");
+        console.log(ans);
+    </script>
+</body>
+
+</html>
